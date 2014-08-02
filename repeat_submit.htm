@@ -1,0 +1,19 @@
+<form method="post" name="register" action="" onsubmit="return submitForm();">
+    <input name="text" type="text" id="text"/>
+    <input name="cont" value="提交" type="submit">
+</form>
+<script type="text/javascript" charset="utf-8">
+    function submitForm() {
+        document.register.cont.value='正在提交,请等待...';
+        document.register.cont.disabled=true;
+
+        /** 验证表单数据 **/
+
+        /** 提交表单 **/
+        document.register.submit();
+
+        /** 或者 使用 Ajax 提交 **/
+
+        return false;
+    }
+</script>
